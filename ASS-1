@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<ctype.h>
+int main()
+{
+	int i,lc=0,sp=0;
+	char s1[100];
+	printf("Enter the string:");
+	gets(s1);
+	for(i=0;s1[i]!='\0';i++)
+	{
+		if(ispunct(s1[i]))
+		sp++;
+		if(islower(s1[i]))
+		lc++;
+	}
+	printf("Number of special charecters: %d\n",sp);
+	printf("Number of lower case charecters: %d",lc);
+}
