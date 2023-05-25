@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char s[100],s1[100];
+	printf("Enter the string: ");
+	gets(s);
+	strcpy(s1,s);
+	strrev(s);
+	printf("Reviresed string is: ");
+	puts(s);
+	printf("\nOriginal string: ");
+	puts(s1);
+}
